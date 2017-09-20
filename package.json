@@ -18,14 +18,19 @@
   },
   "homepage": "https://github.com/webtrainingmx/curso-profesional-frontend-septiembre-2017#readme",
   "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-latest": "^6.24.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.0",
     "gulp-file-include": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp-sourcemaps": "^2.6.1",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-node-resolve": "^3.0.0"
   },
   "dependencies": {
-    
+    "axios": "^0.16.2"
   }
 }
