@@ -5,7 +5,7 @@
 # ----- Project ignores
 
 node_modules
-
+dist
 
 
 # ----- Operating Systems
