@@ -16,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/webtrainingmx/curso-profesional-frontend-septiembre-2017/issues"
   },
-  "homepage": "https://github.com/webtrainingmx/curso-profesional-frontend-septiembre-2017#readme"
+  "homepage": "https://github.com/webtrainingmx/curso-profesional-frontend-septiembre-2017#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-file-include": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  },
+  "dependencies": {
+    
+  }
 }
