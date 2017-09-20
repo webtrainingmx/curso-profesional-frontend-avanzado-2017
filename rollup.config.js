@@ -1,5 +1,5 @@
 import resolve from 'rollup-plugin-node-resolve';
-// import commonjs from 'rollup-plugin-commonjs';
+import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 
 export default {
@@ -11,7 +11,7 @@ export default {
 	name: 'ConductorGenial',
 	plugins: [
 		resolve( {
-			// pass custom options to the resolve plugin
+			browser: true, // Needed by axios to be correctly included in the bundle.jsclear
 			customResolveOptions: {
 				moduleDirectory: 'node_modules',
 				jsnext: true,
@@ -20,13 +20,10 @@ export default {
 		} ),
 		babel( {
 			exclude: 'node_modules/**' // only transpile our source code
+		} ),
+		commonjs( {
+			// include: 'node_modules/**'
 		} )
-		// commonjs( {
-		// 	include: 'node_modules/**',  // Default: undefined
-		// 	ignoreGlobal: false,  // Default: false
-		// 	sourceMap: false,  // Default: true
-		//
-		// } )
 	],
 	// indicate which modules should be treated as external
 	// external: [ 'axios' ]
