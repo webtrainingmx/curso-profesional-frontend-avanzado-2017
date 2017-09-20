@@ -6,7 +6,7 @@ export default {
 	input: './src/js/app.js',
 	output: {
 		file: './dist/js/bundle.js',
-		format: 'iife'
+		format: 'umd'
 	},
 	name: 'ConductorGenial',
 	plugins: [
@@ -25,6 +25,9 @@ export default {
 			// include: 'node_modules/**'
 		} )
 	],
+	watch: {
+		include: 'src/js/**'
+	}
 	// indicate which modules should be treated as external
 	// external: [ 'axios' ]
 };
